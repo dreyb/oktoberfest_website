@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*font-family: 'Bebas Neue', cursive;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ff3251;
+  overflow-x: hidden;
+}
+
+.titulo {
+  font-family: "Bebas Neue", cursive;
+  color: #fdc41f;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+  margin-top: 30px;
+}
+
+.subtitulo {
+  font-family: "Bebas Neue", cursive;
+  color: #fdc41f;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+}
+
+.imagens {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.imagens img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+  cursor: pointer;
+  margin: 8px;
+}
+
+#the-rock:hover {
+  opacity: 50%;
+  transition: 0.8s;
+}
+
+#fabio-melo:hover {
+  opacity: 50%;
+  transition: 0.8s;
+}
+
+#ivete-sangalo:hover {
+  opacity: 50%;
+  transition: 0.8s;
+}
+
+#gil-vigor:hover {
+  opacity: 50%;
+  transition: 0.8s;
+}
+
+.sobre {
+  width: 60%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  background-color: #ED2A44;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+  margin-top: 30px;
+}
+
+#intro {
+  margin-bottom: 18px;
+}
+
+.sobre p {
+  font-family: "Bebas Neue", cursive;
+  color: #fdc41f;
+  text-align: justify;
+  font-size: 17px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+  width: 80%;
+}
+
+.sobre img {
+  margin-right: 13%;
+}
+
+.sobre ul {
+  list-style: none;
+  margin-left: 50px;
+}
+
+.sobre li :before {
+  content: "\1F37B ";
+}
+
+.carrossel {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.carrossel img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+}
+
+.mapa {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 999px) {
+  .imagens {
+    width: 300px;
+    display: list-item;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+  }
+  .sobre img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .imagens {
+    width: 260px;
+  }
+  .imagens img {
+    width: 260px;
+  }
+}
