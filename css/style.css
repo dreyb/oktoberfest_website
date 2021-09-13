@@ -3,15 +3,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*font-family: 'Bebas Neue', cursive;*/
 
+
+/* ---Estrutura da página--- */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: #ff3251;
+
+/*body {
+   background-color: #ff3251; 
+  background-image: url("https://yt3.ggpht.com/f8fJ_v4cN9JdZqNyt7IWcZ1MPGOExU20vvCsT0jUM9dDILhJKA03R7BurgySDZ-3s86p3uvTjA=s900-c-k-c0x00ffffff-no-rj");
   overflow-x: hidden;
-}
+}*/
 
 .titulo {
   font-family: "Bebas Neue", cursive;
@@ -31,19 +36,24 @@ body {
 }
 
 .imagens {
-  width: 100vw;
+  margin-left: 0.5vw;
+  width: 98vw;
+  align-content: center;
   justify-content: center;
   align-items: center;
+  text-align: center;
   display: flex;
   margin-top: 20px;
 }
 
 .imagens img {
   border-radius: 20px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
   cursor: pointer;
-  margin: 8px;
+  margin: 4px;
 }
+
+/* ---Artistas confirmados - TOPO--- */
 
 #the-rock:hover {
   opacity: 50%;
@@ -64,6 +74,8 @@ body {
   opacity: 50%;
   transition: 0.8s;
 }
+
+/* ---Sessão sobre - MEIO--- */
 
 .sobre {
   width: 60%;
@@ -87,8 +99,8 @@ body {
   color: #fdc41f;
   text-align: justify;
   font-size: 17px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
-  width: 80%;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.479);
+  width: 30vw;
 }
 
 .sobre img {
@@ -97,25 +109,43 @@ body {
 
 .sobre ul {
   list-style: none;
-  margin-left: 50px;
+  margin-left: 3vw;
 }
 
 .sobre li :before {
   content: "\1F37B ";
 }
 
-.carrossel {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+/* ---Carrossel de fotos - MEIO--- */
+
+
+ .carrossel {
   display: flex;
-  margin-top: 30px;
+  align-items: left;
+  justify-content: left;
+  margin: 30px 5%;
+  min-height: 100vh;
+  background-color: coral;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.308);
+  overflow:hidden;
+  height: auto;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
 
 .carrossel img {
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
-}
+  object-fit: cover;
+  width: 90vw;
+} 
+
+/* ---Mapa de localização - INFERIOR--- */
 
 .mapa {
   justify-content: center;
@@ -124,6 +154,34 @@ body {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+
+
+/* ---Formulário de compra--- */
+
+.formulario {
+  justify-content: center;
+  align-content: center;
+  align-items: center ;
+  display: flex;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	background-color: #CC2E45;
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 15px;
+	margin: 20px 0 0;
+}
+
+/* ---Estrutura da página--- */
 
 @media (max-width: 999px) {
   .imagens {
@@ -144,5 +202,21 @@ body {
   }
   .imagens img {
     width: 260px;
+  }
+}
+#videoBG {
+  position:fixed;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9){
+  #videoBG{
+    width:100%;
+    height:auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  #videoBG{
+    width:auto;
+    height:100%;
   }
 }

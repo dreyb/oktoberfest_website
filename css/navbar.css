@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 /*font-family: 'Shadows Into Light Two', cursive;*/
 
+/* ---Estrutura da página--- */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +18,8 @@ a {
 a:hover {
   color: white;
 }
+
+/* ---Barra de navegação--- */
 
 .logo {
   position: relative;

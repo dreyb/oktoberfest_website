@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oktoberfest de Igrejinha - Site Oficial.</title>
-    <link rel="shortcut icon" href="img/cerveja_png.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="content/img/cerveja_png.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/carousel.css" /> -->
+    <script src="js/carousel.js" defer></script>
   </head>
   <body>
+        <!-- Background -->
+
+        <video id="videoBG" autoplay muted loop>
+          <source src="content/videos/template.mp4" type="video/mp4">
+      </video>
+
     <header>
       <nav>
         <a href="#" class="logo"
-          ><img src="img/logo-cerveja.png" alt="Logo-oktoberfest" width="140px"
+          ><img src="content/img/logo-cerveja.png" alt="Logo-oktoberfest" width="140px"
         /></a>
         <div class="mobile-menu">
           <div class="line-1"></div>
@@ -30,11 +38,14 @@
       <script src="js/navbar.js"></script>
     </header>
     <main>
+      
+      <!-- Artistas confirmados - TOPO -->
+
       <h1 class="titulo">Artistas Confirmados!</h1>
       <div class="imagens">
         <a href="https://www.instagram.com/gildovigor/" target="_blank">
           <img
-            src="img/gil_vigor.png"
+            src="content/img/gil_vigor.png"
             alt="Gil do Vigor"
             width="300px"
             id="gil-vigor"
@@ -42,7 +53,7 @@
         </a>
         <a href="https://www.instagram.com/pefabiodemelo/" target="_blank">
           <img
-            src="img/fabio_mello.png"
+            src="content/img/fabio_mello.png"
             alt="Pe Fábio de Mello"
             width="300px"
             id="fabio-melo"
@@ -50,7 +61,7 @@
         </a>
         <a href="https://www.instagram.com/therock/?hl=pt-br" target="_blank">
           <img
-            src="img/dwayne_rock.png"
+            src="content/img/dwayne_rock.png"
             alt="Dwayne The Rock Johnson"
             width="300px"
             id="the-rock"
@@ -58,13 +69,18 @@
         </a>
         <a href="https://www.instagram.com/ivetesangalo/" target="_blank">
           <img
-            src="img/ivete.png"
+            src="content/img/ivete.png"
             alt="Ivete Sangalo"
             width="300px"
             id="ivete-sangalo"
           />
         </a>
-      </div>
+      </div> 
+        
+      <!--  ADICIONAR BOTÃO AQUI -->
+
+      <!--  Sessão sobre - MEIO -->
+
       <h1 class="titulo">Sobre nós</h1>
       <div class="sobre">
         <ul>
@@ -89,15 +105,28 @@
             <p>Ótima e bem completa infraestrutura</p>
           </li>
         </ul>
-        <img src="img/logo2.png" alt="Logo Oktoberfest" width="25%" />
+        <img src="content/img/logo2.png" alt="Logo Oktoberfest" width="25%" />
       </div>
+
+      <!-- Carrossel de fotos - MEIO -->
+
       <h1 class="titulo">A maior festa popular do Brasil!</h1>
       <h2 class="subtitulo">
         Desde 1988, espalhar a alegria é a nossa tradição!
       </h2>
-      <div class="carrossel">
-        <img src="img/imagem01.png" alt="Imagem 01" width="1200px" />
+      <div class="carrossel">         
+        <div class="container" id="img">
+          <img src="content/img/imagem01.png" alt="Imagem 01 descrição" /> 
+          <img src="content/img/imagem02.png" alt="Imagem 02 descrição" />
+          <img src="content/img/imagem03.png" alt="Imagem 03 descrição" />
+          <!-- 
+          <img src="content/img/imagem04.png" alt="Imagem 04 descrição" />
+          -->
+        </div>
       </div>
+      
+      <!-- Mapa de localização - INFERIOR -->
+
       <h1 class="titulo">localização</h1>
       <h2 class="subtitulo">Às margens do Rio Paranhana</h2>
       <div class="mapa">
@@ -110,7 +139,35 @@
           loading="lazy"
         ></iframe>
       </div>
+
+      <!-- Formulário de compra -->
+      
+      <!-- ❗❗❗Formulário comentado por que ainda não está funcional❗❗❗ 👍-->
+      
+      <!--<div class="formulario">
+        <form action="/pagina-processa-dados-do-form" method="post" class="venda">
+          <div>
+            <label for="nome">Nome</label>
+				    <input type="text" id="nome" class="input-padrao" required>
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg"></textarea>
+    </div>
+          
+        </form>
+      </div> -->
     </main>
-    <footer></footer>
+    
+    <!-- Rodapé -->
+
+    <footer>
+      <!--<img src="content/img/logo3.png">-->
+			<p class="copyright">&copy; Copyright squad 8 - 2021</p> 
+    </footer>
   </body>
 </html>
