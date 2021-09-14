@@ -23,7 +23,7 @@ a:hover {
 
 .logo {
   position: relative;
-  top: 2px;
+  top: 1vw;
 }
 
 nav {
@@ -67,7 +67,7 @@ nav {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #FF3252;
+    background: #ED2A44;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

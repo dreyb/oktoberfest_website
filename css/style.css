@@ -51,27 +51,28 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
   cursor: pointer;
   margin: 4px;
+  opacity: 60%;
 }
 
 /* ---Artistas confirmados - TOPO--- */
 
 #the-rock:hover {
-  opacity: 50%;
+  opacity: 0;
   transition: 0.8s;
 }
 
 #fabio-melo:hover {
-  opacity: 50%;
+  opacity: 0;
   transition: 0.8s;
 }
 
 #ivete-sangalo:hover {
-  opacity: 50%;
+  opacity: 0;
   transition: 0.8s;
 }
 
 #gil-vigor:hover {
-  opacity: 50%;
+  opacity: 0;
   transition: 0.8s;
 }
 
@@ -189,7 +190,7 @@ footer {
 }
 
 .rodape-img {
-  width: 15%;
+  width: 100%;
 }
 
 .copyright {
