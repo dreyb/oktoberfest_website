@@ -3,18 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*font-family: 'Bebas Neue', cursive;*/
 
+@import url("https://fonts.google.com/specimen/Shadows+Into+Light+Two");
+/*font-family: 'Shadows Into Light Two'*/
+
 /* ---Estrutura da página--- */
 
 * {
   margin: 0;
   padding: 0;
 }
-
-/*body {
-   background-color: #ff3251; 
-  background-image: url("https://yt3.ggpht.com/f8fJ_v4cN9JdZqNyt7IWcZ1MPGOExU20vvCsT0jUM9dDILhJKA03R7BurgySDZ-3s86p3uvTjA=s900-c-k-c0x00ffffff-no-rj");
-  overflow-x: hidden;
-}*/
 
 .titulo {
   font-family: "Bebas Neue", cursive;
@@ -205,9 +202,14 @@ form {
 
 .input-padrao {
   display: flex;
-  margin: 0 0 20px;
+  margin: 5px 20%;
   padding: 10px 25px;
   width: 50%;
+}
+
+label {
+  /*font-family: "Shadows Into Light Two"; */
+  font-weight: bold;
 }
 
 .enviar {
