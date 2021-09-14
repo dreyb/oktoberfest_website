@@ -1,113 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-/*font-family: 'Shadows Into Light Two', cursive;*/
-
-/* ---Estrutura da página--- */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: #fdc41f;
-  text-decoration: none;
-  transition: 0.3s;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-}
-
-a:hover {
-  color: white;
-}
-
-/* ---Barra de navegação--- */
-
-.logo {
+.topnav {
+  overflow: hidden;
+  background-color: #333;
   position: relative;
-  top: 2px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #ed2a44;
-  height: 8vh;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-}
-
-.nav-list li {
-  margin-left: 32px;
-}
-
-.mobile-menu {
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
   display: none;
-  cursor: pointer;
 }
 
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: #fdc41f;
-  margin: 8px;
-  transition: 0.3s;
+/* Style navigation menu links */
+.topnav a {
+  color: #fdc41f;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #ed2a44;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    z-index: 100;
-  }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
-  .mobile-menu {
-    display: block;
-  }
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #cc2e45;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.nav-list.active {
-  transform: translateX(0);
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ff3251;
+  color: white;
 }

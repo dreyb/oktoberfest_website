@@ -15,34 +15,38 @@
     <script src="js/carousel.js" defer></script>
   </head>
   <body>
+
+    <script> 
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+      
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
     <!-- Background -->
 
     <video id="videoBG" autoplay muted loop>
       <source src="assets/videos/template.mp4" type="video/mp4" />
     </video>
-
-    <header>
-      <nav>
-        <a href="#" class="logo"
-          ><img
-            src="assets/img/logo-cerveja.png"
-            alt="Logo-oktoberfest"
-            width="180px"
-        /></a>
-        <div class="mobile-menu">
-          <div class="line-1"></div>
-          <div class="line-2"></div>
-          <div class="line-3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Galeria</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-      <script src="js/navbar.js"></script>
-    </header>
     <main>
       <!-- Artistas confirmados - TOPO -->
 
@@ -86,7 +90,7 @@
 
       <!--  Sessão sobre - MEIO -->
 
-      <!--<h1 class="titulo">Sobre nós</h1>
+      <h1 class="titulo">Sobre nós</h1>
       <div class="sobre">
         <ul>
           <p id="intro">
@@ -108,7 +112,7 @@
           </li>
         </ul>
         <img src="assets/img/logo2.png" alt="Logotipo" />
-      </div>-->
+      </div>
 
       <!-- Carrossel de fotos - MEIO -->
 
@@ -167,8 +171,6 @@
 
       <!-- Formulário de compra -->
 
-      <!-- ❗❗❗Formulário comentado por que ainda não está funcional❗❗❗ 👍-->
-
       <h1 class="titulo">Formulário</h1>
       <h2 class="subtitulo">Adquira já o seu bilhete</h2>
       <div class="formulario">
@@ -192,6 +194,28 @@
           </div>
         </form>
       </div>
+
+      <!-- Squad 8 -->
+      <h1 class="titulo">Equipe</h1>
+      <h2 class="subtitulo">squad 8 - #TEUFUTURO</h2>
+      <section class="time">
+        
+        
+        <a href="https://www.linkedin.com/in/gabriel-de-moura-jank-209b18218/">
+          <img src="assets/squad-fotos/gabe.png" class="membro">
+        </a>
+        <a href="https://www.linkedin.com/in/cristian-martini-78bb92210/">
+          <img src="assets/squad-fotos/cristino.png" class="membro">
+        </a>
+        <a href="https://www.linkedin.com/in/andrei-bacin-70762b220/">
+          <img src="assets/squad-fotos/andrei.png" class="membro">
+        </a>
+        <a href="https://www.linkedin.com/in/leonardo-de-oliveira-telles-921393214/">
+          <img src="assets/squad-fotos/leo.jpeg" class="membro">
+        </a>
+
+      </section>
+
     </main>
 
     <!-- Rodapé -->

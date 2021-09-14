@@ -115,7 +115,10 @@
   content: "\1F37B ";
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
   .sobre {
     display: block;
     width: 100%;
@@ -155,7 +158,7 @@
   width: 90vw; /* mudar no carousel.js também */
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
   .carrossel {
     display: block;
     width: 90%;
@@ -208,8 +211,8 @@ form {
 }
 
 label {
-  /*font-family: "Shadows Into Light Two"; */
-  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  font-size: 16px;
 }
 
 .enviar {
@@ -229,11 +232,33 @@ label {
   background: darkorange;
 }
 
+/* Membros do time */
+
+.time {
+  margin-top:30px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.membro {
+  width: 20%;
+  transition: 1s;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.membro:hover {
+  opacity: 1;
+  transform: (1.2);
+}
+
 /* Footer */
 
 footer {
   text-align: center;
-  background-color: #cc2e45;
+  background-color: #26001e;
   margin-top: 50px;
   width: 100%;
   padding-top: 1em;
@@ -252,7 +277,7 @@ footer {
 
 /* ---Estrutura da página--- */
 
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
   .imagens {
     width: 300px;
     display: list-item;
@@ -289,4 +314,3 @@ footer {
     height: 100%;
   }
 }
-
