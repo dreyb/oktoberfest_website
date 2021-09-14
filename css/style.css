@@ -138,11 +138,10 @@
   align-items: left;
   justify-content: left;
   margin: 30px 5%;
-  min-height: 100vh;
-  background-color: coral;
+  min-height: 80vh;
   box-sizing: border-box;
   border-radius: 20px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.308);
+  background-color: #00000054;
   overflow: hidden;
   height: auto;
   width: 90%;
@@ -156,7 +155,17 @@
 
 .carrossel img {
   object-fit: cover;
-  width: 90vw;
+  width: 90vw; /* mudar no carousel.js também */
+}
+
+@media (max-width: 999px) {
+  .carrossel {
+    display: block;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
 }
 
 /* ---Mapa de localização - INFERIOR--- */
@@ -186,7 +195,36 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-align: center;
   display: flex;
+}
+
+form {
+  margin: 40px 0;
+}
+
+.input-padrao {
+  display: flex;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
 }
 
 /* Footer */
@@ -249,3 +287,4 @@ footer {
     height: 100%;
   }
 }
+
