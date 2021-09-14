@@ -3,14 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*font-family: 'Bebas Neue', cursive;*/
 
-
 /* ---Estrutura da página--- */
 
 * {
   margin: 0;
   padding: 0;
 }
-
 
 /*body {
    background-color: #ff3251; 
@@ -51,28 +49,28 @@
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.308);
   cursor: pointer;
   margin: 4px;
-  opacity: 60%;
+  opacity: 80%;
 }
 
 /* ---Artistas confirmados - TOPO--- */
 
 #the-rock:hover {
-  opacity: 0;
+  opacity: 100%;
   transition: 0.8s;
 }
 
 #fabio-melo:hover {
-  opacity: 0;
+  opacity: 100%;
   transition: 0.8s;
 }
 
 #ivete-sangalo:hover {
-  opacity: 0;
+  opacity: 100%;
   transition: 0.8s;
 }
 
 #gil-vigor:hover {
-  opacity: 0;
+  opacity: 100%;
   transition: 0.8s;
 }
 
@@ -86,7 +84,7 @@
   margin-right: 15%;
   display: flex;
   align-items: center;
-  background-color: #ED2A44;
+  background-color: #ed2a44;
   border-radius: 20px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
   margin-top: 30px;
@@ -120,10 +118,22 @@
   content: "\1F37B ";
 }
 
+@media (max-width: 999px) {
+  .sobre {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sobre img {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
 /* ---Carrossel de fotos - MEIO--- */
 
-
- .carrossel {
+.carrossel {
   display: flex;
   align-items: left;
   justify-content: left;
@@ -133,7 +143,7 @@
   box-sizing: border-box;
   border-radius: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.308);
-  overflow:hidden;
+  overflow: hidden;
   height: auto;
   width: 90%;
 }
@@ -147,7 +157,7 @@
 .carrossel img {
   object-fit: cover;
   width: 90vw;
-} 
+}
 
 /* ---Mapa de localização - INFERIOR--- */
 
@@ -156,6 +166,7 @@
   align-items: center;
   display: flex;
   margin-bottom: 30px;
+  margin-top: 30px;
   z-index: 1;
 }
 
@@ -169,21 +180,20 @@
   margin-top: 30px;
 }
 
-
 /* ---Formulário de compra--- */
 
 .formulario {
   justify-content: center;
   align-content: center;
-  align-items: center ;
+  align-items: center;
   display: flex;
 }
 
 /* Footer */
 
 footer {
-	text-align: center;
-	background-color: #CC2E45;
+  text-align: center;
+  background-color: #cc2e45;
   margin-top: 50px;
   width: 100%;
   padding-top: 1em;
@@ -194,10 +204,10 @@ footer {
 }
 
 .copyright {
-	color: #FFFFFF;
+  color: #ffffff;
   font-family: bebas Neue, cursive;
-	font-size: 20px;
-	margin: 0px 0 0;
+  font-size: 20px;
+  margin: 0px 0 0;
 }
 
 /* ---Estrutura da página--- */
@@ -224,18 +234,18 @@ footer {
   }
 }
 #videoBG {
-  position:fixed;
+  position: fixed;
   z-index: -1;
 }
-@media (min-aspect-ratio: 16/9){
-  #videoBG{
-    width:100%;
-    height:auto;
+@media (min-aspect-ratio: 16/9) {
+  #videoBG {
+    width: 100%;
+    height: auto;
   }
 }
-@media (max-aspect-ratio: 16/9){
-  #videoBG{
-    width:auto;
-    height:100%;
+@media (max-aspect-ratio: 16/9) {
+  #videoBG {
+    width: auto;
+    height: 100%;
   }
 }

@@ -13,6 +13,7 @@ a {
   text-decoration: none;
   transition: 0.3s;
   font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 
 a:hover {
@@ -23,7 +24,7 @@ a:hover {
 
 .logo {
   position: relative;
-  top: 1vw;
+  top: 2px;
 }
 
 nav {
@@ -52,7 +53,7 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background: #FDC41F;
   margin: 8px;
   transition: 0.3s;
 }
