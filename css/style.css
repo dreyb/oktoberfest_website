@@ -78,10 +78,11 @@
 /* ---Sessão sobre - MEIO--- */
 
 .sobre {
-  width: 60%;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   display: flex;
   align-items: center;
   background-color: #ED2A44;
@@ -91,20 +92,22 @@
 }
 
 #intro {
-  margin-bottom: 18px;
+  margin-bottom: 1em;
+  width: 90%;
 }
 
 .sobre p {
   font-family: "Bebas Neue", cursive;
   color: #fdc41f;
-  text-align: justify;
+  text-align: left;
   font-size: 17px;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.479);
-  width: 30vw;
+  width: 70%;
 }
 
 .sobre img {
   margin-right: 13%;
+  width: 30%;
 }
 
 .sobre ul {
@@ -152,7 +155,17 @@
   align-items: center;
   display: flex;
   margin-bottom: 30px;
-  margin-top: 20px;
+  z-index: 1;
+}
+
+.local-img {
+  margin-left: 15%;
+  display: flex;
+  width: 70%;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  z-index: 0;
+  margin-top: 30px;
 }
 
 
@@ -175,10 +188,15 @@ footer {
   padding-top: 1em;
 }
 
+.rodape-img {
+  width: 15%;
+}
+
 .copyright {
 	color: #FFFFFF;
-	font-size: 15px;
-	margin: 20px 0 0;
+  font-family: bebas Neue, cursive;
+	font-size: 20px;
+	margin: 0px 0 0;
 }
 
 /* ---Estrutura da página--- */
