@@ -218,21 +218,33 @@ label {
 .enviar {
   width: 40%;
   padding: 15px 0;
-  background: orange;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
+  background:#26001e;
+  color: #fdc41f;
+  font-size: 30px;
   border: none;
   border-radius: 5px;
   transition: 1s all;
   cursor: pointer;
+  font-family:"Bebas Neue",cursive;
 }
 
 .enviar:hover {
-  background: darkorange;
+  color: #ed2a44;
 }
 
 /* Membros do time */
+
+.time a {
+  text-decoration: none;
+}
+
+#titulo-nome{
+  margin-top: 10vw;
+}
+
+#sub-nome {
+  margin-bottom: 3%;
+}
 
 .time {
   margin-top:30px;
@@ -244,14 +256,43 @@ label {
 
 .membro {
   width: 20%;
-  transition: 1s;
-  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 40px;
+  opacity: 0.8;
+  padding: 1%;
+}
+
+.membro-nome {
+  display: inline-block;
+  width: 20%;
+  transition: 0.5s;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: "Bebas Neue",cursive;
+  color: #fdc41f;
+  font-size: 35px;
+  background-color: #26001e;
+}
+
+.membro-nome:hover {
+  color: #ed2a44;
+  transform: scale(1.03);
+}
+
+.membro-nome::before {
+  content: "\1F37B ";
+}
+
+.time-nome {
+  background: #26001e;
   opacity: 0.8;
 }
 
 .membro:hover {
   opacity: 1;
-  transform: (1.2);
+  transform: scale(1.1);
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 /* Footer */
@@ -286,7 +327,15 @@ footer {
     list-style: none;
   }
   .sobre img {
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sobre {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
