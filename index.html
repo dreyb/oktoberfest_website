@@ -10,37 +10,31 @@
       href="assets/img/cerveja_png.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css">
     <script src="js/carousel.js" defer></script>
   </head>
   <body>
-
-    <script> 
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-      </script>
-      
-      <!-- Top Navigation Menu -->
-      <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+    <!-- Top Navigation Menu -->
+    <header>
+      <nav>
+        <a href="#" class="logo"><img src="assets/img/logo-cerveja.png" alt="Logotipo" width="120px"></a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+        <ul class="nav-list">
+          <li><a href="#artistas">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#local">Local</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+        </ul>
+      </nav>
+      <script src="js/navbar.js"></script>
+    </header>
 
     <!-- Background -->
 
@@ -50,7 +44,7 @@
     <main>
       <!-- Artistas confirmados - TOPO -->
 
-      <h1 class="titulo">Artistas Confirmados!</h1>
+      <h1 class="titulo" id="artistas">Artistas Confirmados!</h1>
       <div class="imagens">
         <a href="https://www.instagram.com/gildovigor/" target="_blank">
           <img
@@ -88,7 +82,7 @@
 
       <!--  Sessão sobre - MEIO -->
 
-      <h1 class="titulo">Sobre nós</h1>
+      <h1 class="titulo" id="sobre">Sobre nós</h1>
       <div class="sobre">
         <ul>
           <p id="intro">
@@ -114,7 +108,7 @@
 
       <!-- Carrossel de fotos - MEIO -->
 
-      <h1 class="titulo">A maior festa popular do Brasil!</h1>
+      <h1 class="titulo" id="galeria">A maior festa popular do Brasil!</h1>
       <h2 class="subtitulo">
         Desde 1988, espalhar a alegria é a nossa tradição!
       </h2>
@@ -152,7 +146,7 @@
 
       <!-- Mapa de localização - INFERIOR -->
 
-      <h1 class="titulo">localização</h1>
+      <h1 class="titulo" id="local">localização</h1>
       <h2 class="subtitulo">Às margens do Rio Paranhana</h2>
       <div class="img-local">
         <div class="mapa">
@@ -169,11 +163,10 @@
 
       <!-- Formulário de compra -->
 
-      <h1 class="titulo">Formulário</h1>
+      <h1 class="titulo" id="contato">Formulário</h1>
       <h2 class="subtitulo">Adquira já o seu bilhete</h2>
       <div class="formulario">
         <form
-          action="/pagina-processa-dados-do-form"
           method="post"
           class="venda"
         >
@@ -188,15 +181,14 @@
 
 				<label for="mensagem">Mensagem</label>
 				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required style="resize: none"></textarea>
-          <input type="submit" value="Enviar formulário" class="enviar">
+          <input type="submit" value="Enviar" class="enviar">
           </div>
         </form>
       </div>
 
       <!-- Squad 8 -->
-            
-      
-      <section class="time">
+          
+      <section class="time" id="equipe">
         
         <h1 class="titulo" id="titulo-nome">Equipe</h1>
         <h2 class="subtitulo" id="sub-nome">squad 8 - #TEUFUTURO</h2>
@@ -217,17 +209,17 @@
         <!-- nomes -->
 
         <div class="time-nome">
-          <a href="https://www.linkedin.com/in/gabriel-de-moura-jank-209b18218/" target="_blank">
+          <a href="https://github.com/GabJank" target="_blank">
             <h2 class="membro-nome">Gabriel Jank</h2>
           </a>
-          <a href="https://www.linkedin.com/in/cristian-martini-78bb92210/" target="_blank">
+          <a href="https://github.com/CristianC12" target="_blank">
             <h2 class="membro-nome">Cristian Martini</h2>
           </a>
-          <a href="https://www.linkedin.com/in/andrei-bacin-70762b220/" target="_blank">
+          <a href="https://github.com/dreyb" target="_blank">
             <h2 class="membro-nome">Andrei Bacin</h2>
           </a>
-          <a href="https://www.linkedin.com/in/leonardo-de-oliveira-telles-921393214/" target="_blank">
-            <h2 class="membro-nome">Leonardo Teles</h2>
+          <a href="https://github.com/LeonardoTelles1204" target="_blank">
+            <h2 class="membro-nome">Leonardo Telles</h2>
           </a>
         </div>
 

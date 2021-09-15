@@ -1,40 +1,112 @@
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
+a {
   color: #fdc41f;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
 }
 
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: #cc2e45;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+a:hover {
+  color: #ff9400;
 }
 
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
   background-color: #ff3251;
-  color: white;
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  min-height: 30px;
+}
+
+nav img {
+  position: relative;
+  top: 2px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fdc41f;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #ff3251;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
