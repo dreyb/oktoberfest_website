@@ -298,6 +298,29 @@ label {
   padding-right: 2%;
 }
 
+#titulo-video{
+  margin-top: 80px;
+}
+.video {
+margin-top: 30px;
+display: flex;
+align-content: center;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.video iframe {
+  margin-top: 30px;
+  width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.video h2 {
+  padding-bottom: 2%;
+}
+
 /* Footer */
 
 footer {
@@ -349,6 +372,13 @@ footer {
 
   .membro-nome {
     font-size: 12px;
+  }
+
+  .video iframe {
+    margin-top: 30px;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
