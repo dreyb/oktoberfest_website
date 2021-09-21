@@ -36,8 +36,8 @@
 }
 
 .imagens {
-  margin-left: 0.5vw;
-  width: 98vw;
+  margin-left: 4.4%;
+  margin-right: 4.4%;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -70,8 +70,8 @@
   padding: 5px;
   width: auto;
   height: auto;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
   align-items: center;
   background-color: #ed2a44;
@@ -258,7 +258,7 @@ label {
 }
 
 .membro {
-  width: 20%;
+  width: 20.5%;
   transition: 0.5s;
   border-radius: 40px;
   opacity: 0.8;
@@ -267,7 +267,7 @@ label {
 
 .membro-nome {
   display: inline-block;
-  width: 20%;
+  width: 20.5%;
   transition: 0.5s;
   padding-left: 1%;
   padding-right: 1%;
